@@ -11,5 +11,10 @@ inputElement.addEventListener('input', (event) => {
   } else if (remainingChars <= 10) {
     inputElement.classList.remove('error');
     remainingCharsElement.classList.remove('error');
+    inputElement.classList.add('warning');
+    remainingCharsElement.classList.add('warning');
+  } else {
+    inputElement.classList.remove('warning');
+    remainingCharsElement.classList.remove('warning');
   }
 });
